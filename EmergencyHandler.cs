@@ -11,9 +11,8 @@ namespace Solid_Principle
         public void EmergencyShutdown()
         {
             Console.WriteLine("Emergency shutdown triggered!");
-            File.WriteAllText("log.txt", "EMERGENCY OCCURRED");
-            Email.Send("admin@spaceagency.com", "Emergency triggered");
+            DatabaseLogger data = new DatabaseLogger();
+            data.Log("message");
         }
-
     }
 }
