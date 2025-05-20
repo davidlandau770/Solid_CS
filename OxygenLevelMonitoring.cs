@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Principle
 {
-    internal interface ILogger
+    internal class OxygenLevelMonitoring
     {
-        void Log(string store, string message);
     }
 }
