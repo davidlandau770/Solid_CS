@@ -11,6 +11,7 @@ namespace Solid_Principle
         public void Log(string store, string message)
         {
             string[] logs = new string[] { message };
+            Console.WriteLine("!");
         }
     }
 }
