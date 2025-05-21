@@ -17,7 +17,7 @@ namespace Solid_Principle
                 //telemetrySender.SendSms("The monitoring is low!");
                 //telemetrySender.SendEmail("system@gmail.com", "The monitoring is low!");
                 SendEmail("system@gmail.com", "The monitoring is low!");
-                SendSms("The monitoring is low!");
+                SendSms("0507707707", "The monitoring is low!");
             }
         }
 
@@ -26,7 +26,7 @@ namespace Solid_Principle
             Console.WriteLine($"Sending email to {to}: {message}");
         }
 
-        public void SendSms(string message)
+        public void SendSms(string to, string message)
         {
             Console.WriteLine(message);
         }

@@ -8,10 +8,12 @@ namespace Solid_Principle
 {
     internal class DatabaseLogger : ILogger
     {
-        public void Log(string store, string message)
+        public List<string> Logs = new List<string>();
+
+        public void Log(string storage, string message)
         {
-            string[] logs = new string[] { message };
-            Console.WriteLine("!");
+            Logs.Add($"{storage}, {message}");
+            Console.WriteLine("up to database!");
         }
     }
 }

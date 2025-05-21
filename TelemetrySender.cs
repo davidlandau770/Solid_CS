@@ -18,9 +18,9 @@ namespace Solid_Principle
             Console.WriteLine($"Sending email to {to}: {message}");
         }
 
-        public void SendSms(string message)
+        public void SendSms(string to, string message)
         {
-            Console.WriteLine(message);
+            Console.WriteLine($"Sending SMS to {to}: {message}");
         }
     }
 }

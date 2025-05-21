@@ -8,6 +8,6 @@ namespace Solid_Principle
 {
     internal interface ILogger
     {
-        void Log(string store, string message);
+        void Log(string storage, string message);
     }
 }
